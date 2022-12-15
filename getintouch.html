@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <title>Document</title>
+
+    <style>
+        #menu{
+            
+        background: gray;
+        width: 90%;
+        height: 4rem;
+        margin-bottom: 15px;
+        opacity: .9;
+        }
+        #menu>ul{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        list-style-type: none;
+        float: right;
+        }
+        #menu>ul>li{
+            text-transform: capitalize;
+            color: white;
+            padding: 2px;
+            position: relative;
+            
+        }
+
+        #menu>ul>li>a{
+            color: white;
+            text-decoration: none;
+            
+            
+        }
+
+        #form-info{
+            background: rgb(93, 173, 93);
+            width: 50%;
+            height: 85%;
+            position: relative;
+            margin: auto 100px auto 100px;
+            
+        }
+
+        input, label{
+            padding: 5px;
+            width: 80%;
+            line-height: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-transform: capitalize;
+        }
+
+        #map{
+            width: 300px;
+            position: absolute;
+        
+        
+        }
+       
+    </style>
+</head>
+<body>
+    <header>
+        <div style="background-color: green; width: 90%; padding: 30px; margin-top: 12px;  border-bottom: 2px solid black;">
+
+        </div>
+        <nav id="menu">
+            <h1><span style="color: #fff; font-size: 30px;;">Health</span> <span style="color: yellow; font-size: 30px;">Essentials</span></h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="tips.html">Tips</a></li>
+                <li><a href="getintouch.html">Get In Touch</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    
+
+
+
+    <!-- this is the footer section -->
+    <div id="form-info">
+        <h1 style="margin-bottom: 10px; text-transform: capitalize;">Get In Touch!</h1>
+        <h2 style="margin-bottom: 10px; text-transform: capitalize;"> use the contact form below to get in touch</h2> 
+    <form action="">
+            <label for="name">Name:</label><br>
+            <input type="text" id="fname" name="fname" value="name" placeholder=" Your Name"><br><br>
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="emaiaddress" name="email" value="email-address" placeholder="your@gmail.com"><br><br>
+            <label for="url">Website:</label><br>
+            <input type="url" id="website" name="web" value="website" placeholder="Website"><br><br>
+            <label for="text">Subject:</label><br>
+            <input type="text" id="subject" name="subject" value="subject" placeholder="I just want to say hello"><br><br>
+            <label for="message">Message:</label><br>
+            <input type="text" id="message" name="message" placeholder="Write your message here, please">
+            <br><br>
+            <button style="background: darkgreen; width: 80%; margin-left: 20px; margin-left: 20px; color: #fff; text-transform: capitalize; border: none; padding: 5px;">send away</button>
+    </form><br><br><br><br>
+
+    <!-- this is the map  -->
+    <br>
+        <div id="map">
+            <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=1000&amp;height=400&amp;hl=en&amp;q=liberia&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://formatjson.org/word-counter">Word Counter</a></div><style>.mapouter{position:relative;text-align:right;width:1000px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:1000px!important;height:400px!important;}</style></div>
+    </div>
+</body>
+</html>
